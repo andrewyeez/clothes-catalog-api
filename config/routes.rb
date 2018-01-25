@@ -1,3 +1,13 @@
 Rails.application.routes.draw do
-  # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
+  # define api endpoints
+  namespace :api, dafaults: {format: :json}, 
+                  contraints: {subdomain: 'api'},
+                  paths: '/' do
+    # /v1/
+    scope module: :v1 do
+      
+    end
+  end
+  }
+  }
 end
