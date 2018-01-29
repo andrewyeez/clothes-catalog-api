@@ -1,3 +1,5 @@
+require_relative '../lib/api_constraints'
+
 Rails.application.routes.draw do
   # define api endpoints
   namespace :api, dafaults: {format: :json}, 
