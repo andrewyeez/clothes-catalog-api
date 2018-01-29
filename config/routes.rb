@@ -1,6 +1,7 @@
 require_relative '../lib/api_constraints'
 
 Rails.application.routes.draw do
+  devise_for :users
   # define api endpoints
   namespace :api, dafaults: {format: :json}, 
                   contraints: {subdomain: 'api'},
